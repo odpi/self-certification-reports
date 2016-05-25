@@ -6,7 +6,12 @@ This repository consists of the ODPi compliance test run results made by ODPi Co
 
 1. Download the latest acceptance test suite ( Current is at http://repo.odpi.org/ODPi/1.0/acceptance-tests/ ).
 2. Unzip the test package on the primary machine on your Hadoop cluster you wish to test.
-3. Install links on the primary machine on your Hadoop cluster you wish to test ( http://links.twibright.com/download.php )
+3. Install links on the primary machine on your Hadoop cluster you wish to test ( Either grab source from http://links.twibright.com/download.php or use the command below to install )
+
+    ```
+    sudo yum install links
+    ```
+
 4. Run the tests, optionally outputing the results to a text file
 
     ```
