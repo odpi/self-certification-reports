@@ -1,0 +1,25 @@
+There are four failing tests in the accompanying test results.  All of them 
+are Bigtop smoke tests.  All of the ODPi specific tests pass.  Also, the Bitop
+HCFS tests were not run because they make assumptions about the location of 
+hadoop-fuse-dfs which is not specified in the ODPi spec.
+
+Of the four failing tests two are HDFS and two are MapReduce.
+
+The two failing HDFS tests are caused by:
+1) Bigtop not finding the LZO compression classes.  Those classes are 
+present on the tested system, as evidenced by doing a
+  ls $HADOOP_COMMON_HOME/$HADOOP_COMMON_LIB_JARS_DIR | grep lzo
+which produces:
+hadoop-lzo-0.6.0.2.4.2.0-258.jar
+
+2) Bigtop assumes that the hdfs user is in a group called hdfs.  In the
+particular setup I was using the hdfs user is in a group called vagrant.
+
+I do not know the cause of the two failing MapReduce tests.  They are 
+terasort related.  I confirmed that the terasort classes were present in the
+MapReduce examples jar that Bigtop uses for the test.  I could find no logs
+produced by Bigtop that contained output of running the tests.  I could confirm
+that the jobs did not start in the cluster by looking at the mapreduce
+jobhistory web page and noting that jobs with the appropriate job names were
+absent.  This means launching the jobs failed, but with no logs figuring out
+the cause of the failure is not trivial.
