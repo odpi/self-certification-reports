@@ -18,5 +18,5 @@ This repository consists of the ODPi compliance test run results made by ODPi Co
     ./run_itest.sh > testresults.txt
     ```
 
-4. If the test pass, issue a pull request with the text output in a file using the naming convention: $HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.xml to this repository.
+4. If the test pass, issue a pull request with the text output in a file using the naming convention: $HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.xml to this repository under a directory named for your company/organizational name.
 5. A member of the ODPi will review and merge in.
