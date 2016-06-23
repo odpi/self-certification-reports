@@ -1,12 +1,12 @@
 ######################################################
 #               CLUSTER INFORMATION                  #
 ######################################################
-# OS: CentOS release 6.7 (Final) Kernel \r on an \m  
+# OS: CentOS release 6.7 (Final) Kernel \r on an \m
 # ARCH: x86_64
 # KERNEL: Linux ip-172-31-13-237 2.6.32-573.18.1.el6.x86_64 #1 SMP Tue Feb 9 22:46:17 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 # MEMORY: MemTotal:        8057960 kB
 # TOTAL YARN NODES: 1
-# HADOOP_VERSION: Hadoop 2.7.1-odpi
+# HADOOP_VERSION: Hadoop 2.7.1-arenadata
 # HADOOP_CONF_DIR: /etc/hadoop/conf
 # HADOOP_MAPRED_HOME: /usr/lib/hadoop-mapreduce
 # BASH_VERSION: 4.1.2(1)-release
@@ -1532,4 +1532,3 @@ References
    3. file:///tmp/odpi-acceptance-1.0.1/bigtop-tests/spec-tests/runtime/build/reports/tests/classes/org.odpi.specs.runtime.TestSpecsRuntime.html#tab0
    4. file:///tmp/odpi-acceptance-1.0.1/bigtop-tests/spec-tests/runtime/build/reports/tests/classes/org.odpi.specs.runtime.TestSpecsRuntime.html#tab1
    6. http://www.gradle.org/
-
