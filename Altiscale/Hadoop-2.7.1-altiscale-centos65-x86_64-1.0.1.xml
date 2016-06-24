@@ -1,0 +1,540 @@
+######################################################
+#               CLUSTER INFORMATION                  #
+######################################################
+# OS: CentOS release 6.5 (Final) Kernel \r on an \m
+# ARCH: x86_64
+# KERNEL: Linux hdptemptest-ci-661-workbench.test.altiscale.com 4.1.16-70.alti6.x86_64 #1 SMP Tue Jan 26 16:43:19 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+# MEMORY: MemTotal:        3854044 kB
+# TOTAL YARN NODES: 3
+# HADOOP_VERSION: Hadoop 2.7.1-altiscale
+# HADOOP_CONF_DIR: /etc/hadoop
+# HADOOP_MAPRED_HOME:
+# BASH_VERSION: 4.1.2(1)-release
+# JAVA_HOME: /usr/java/default
+# JAVA_VERSION: 1.7.0_45
+######################################################
+#                 STARTING ITEST                     #
+######################################################
+# Use --debug/--info/--stacktrace for more details
+Now testing...
+Now testing...
+######################################################
+#                     RESULTS                        #
+######################################################
+~/odpi-acceptance-1.0.1 ~/odpi-acceptance-1.0.1
+## bigtop-tests/smoke-tests/hcfs/build/reports/tests/classes/org.apache.bigtop.itest.hadoop.hcfs.TestFuseDFS.html
+             Class org.apache.bigtop.itest.hadoop.hcfs.TestFuseDFS
+
+   all > org.apache.bigtop.itest.hadoop.hcfs > TestFuseDFS
+
+   2     2        0       0s       0%
+
+   tests failures ignored duration successful
+
+     * Failed tests
+     * Tests
+     * Standard output
+     * Standard error
+
+Failed tests
+
+  classMethod
+
+ java.lang.AssertionError: Failed: hadoop-fuse-dfs mount expected:<0> but was:<127>
+         at org.junit.Assert.fail(Assert.java:88)
+         at org.junit.Assert.failNotEquals(Assert.java:743)
+         at org.junit.Assert.assertEquals(Assert.java:118)
+         at org.junit.Assert.assertEquals(Assert.java:555)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+         at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrap.invoke(StaticMetaMethodSite.java:130)
+         at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:99)
+         at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:50)
+         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
+         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:173)
+         at org.apache.bigtop.itest.hadoop.hcfs.TestFuseDFS.setUp(TestFuseHCFS.groovy:80)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+         at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+         at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+         at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+         at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+         at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:105)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+         at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+         at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+         at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+         at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+         at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+         at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+         at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+         at java.lang.Thread.run(Thread.java:744)
+
+  classMethod
+
+ java.lang.AssertionError: Failed: FUSE-DFS mount not cleaned up expected:<0> but was:<1>
+         at org.junit.Assert.fail(Assert.java:88)
+         at org.junit.Assert.failNotEquals(Assert.java:743)
+         at org.junit.Assert.assertEquals(Assert.java:118)
+         at org.junit.Assert.assertEquals(Assert.java:555)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+         at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+         at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrap.invoke(StaticMetaMethodSite.java:130)
+         at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:99)
+         at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:50)
+         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
+         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:173)
+         at org.apache.bigtop.itest.hadoop.hcfs.TestFuseDFS.tearDown(TestFuseHCFS.groovy:143)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+         at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+         at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+         at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+         at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:105)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+         at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+         at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+         at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+         at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+         at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+         at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+         at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+         at java.lang.Thread.run(Thread.java:744)
+
+Tests
+
+      Test     Duration Result
+   classMethod 0s       failed
+   classMethod 0s       failed
+
+Standard output
+
+ Failed command: hadoop-fuse-dfs dfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 /tmp/hcfs-test -oentry_timeout=0,attribute_timeout=0,rdbuffer=0
+         error code: 127
+         stdout: []
+         stderr: [/bin/bash: line 1: hadoop-fuse-dfs: command not found]
+ Failed command: umount /tmp/hcfs-test
+         error code: 1
+         stdout: []
+         stderr: [umount: /tmp/hcfs-test: not mounted]
+
+Standard error
+
+ 16/06/16 15:37:30 INFO shell.Shell: mounting dfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 on /tmp/hcfs-test
+
+   Wrap lines [ ]
+   Generated by Gradle 2.7 at Jun 16, 2016 3:37:37 PM
+
+## bigtop-tests/smoke-tests/hcfs/build/reports/tests/classes/org.apache.bigtop.itest.hadoop.hcfs.TestCLI.html
+               Class org.apache.bigtop.itest.hadoop.hcfs.TestCLI
+
+   all > org.apache.bigtop.itest.hadoop.hcfs > TestCLI
+
+   1     1        0       7.027s   0%
+
+   tests failures ignored duration successful
+
+     * Failed tests
+     * Tests
+     * Standard error
+
+Failed tests
+
+  testAll
+
+ java.lang.AssertionError: HDFS trash should be disabled via fs.trash.interval expected:<0> but was:<5760>
+         at org.junit.Assert.fail(Assert.java:88)
+         at org.junit.Assert.failNotEquals(Assert.java:743)
+         at org.junit.Assert.assertEquals(Assert.java:118)
+         at org.junit.Assert.assertEquals(Assert.java:555)
+         at org.apache.bigtop.itest.hadoop.hcfs.TestCLI.setUp(TestCLI.java:83)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+         at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+         at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+         at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+         at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+         at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+         at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+         at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+         at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+         at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+         at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+         at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+         at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+         at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:105)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+         at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+         at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+         at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+         at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+         at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+         at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+         at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+         at java.lang.Thread.run(Thread.java:744)
+
+ java.lang.NullPointerException
+         at java.util.regex.Matcher.appendReplacement(Matcher.java:758)
+         at java.util.regex.Matcher.replaceAll(Matcher.java:906)
+         at java.lang.String.replaceAll(String.java:2162)
+         at org.apache.bigtop.itest.hadoop.hcfs.TestCLI.expandCommand(TestCLI.java:144)
+         at org.apache.hadoop.cli.CLITestHelper.displayResults(CLITestHelper.java:182)
+         at org.apache.hadoop.cli.CLITestHelper.tearDown(CLITestHelper.java:125)
+         at org.apache.bigtop.itest.hadoop.hcfs.TestCLI.tearDown(TestCLI.java:109)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+         at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+         at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+         at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+         at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+         at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+         at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+         at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+         at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+         at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+         at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+         at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+         at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:105)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+         at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+         at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+         at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+         at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+         at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+         at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+         at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+         at java.lang.Thread.run(Thread.java:744)
+
+Tests
+
+    Test   Duration Result
+   testAll 7.027s   failed
+
+Standard error
+
+ 16/06/16 15:37:37 INFO cli.CLITestHelper: Detailed results:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper: ----------------------------------
+
+ 16/06/16 15:37:37 INFO cli.CLITestHelper: -------------------------------------------
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                     Test ID: [1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Test Description: [ls: file using absolute path]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -touchz /tmp/testcli_1466091450177/file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -ls /tmp/testcli_1466091450177/file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Cleanup Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -rm /tmp/testcli_1466091450177/file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                  Comparator: [RegexpComparator]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:          Comparision result:   [fail]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:             Expected output:   [^-rw-r--r--( )*1( )*[a-z]*( )*supergroup( )*0( )*[0-9]{4,}-[0-9]{2,}-[0-9]{2,} [0-9]{2,}:[0-9]{2,}( )*/tmp/testcli_1466091450177/file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Actual output:   [null]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper: -------------------------------------------
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                     Test ID: [2]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Test Description: [ls: file using relative path]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -mkdir -p dir]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -touchz file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -ls file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Cleanup Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -rm file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                  Comparator: [RegexpComparator]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:          Comparision result:   [fail]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:             Expected output:   [^-rw-r--r--( )*1( )*[a-z]*( )*supergroup( )*0( )*[0-9]{4,}-[0-9]{2,}-[0-9]{2,} [0-9]{2,}:[0-9]{2,}( )*file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Actual output:   [null]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper: -------------------------------------------
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                     Test ID: [3]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Test Description: [ls: files using globbing]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -mkdir -p dir]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -touchz file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -touchz file2]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -touchz file3]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -touchz file4]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -ls file*]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Cleanup Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -rm -r /user/alti-test-01/*]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                  Comparator: [RegexpComparator]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:          Comparision result:   [fail]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:             Expected output:   [^-rw-r--r--( )*1( )*[a-z]*( )*supergroup( )*0( )*[0-9]{4,}-[0-9]{2,}-[0-9]{2,} [0-9]{2,}:[0-9]{2,}( )*file1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Actual output:   [null]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                  Comparator: [RegexpComparator]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:          Comparision result:   [fail]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:             Expected output:   [^-rw-r--r--( )*1( )*[a-z]*( )*supergroup( )*0( )*[0-9]{4,}-[0-9]{2,}-[0-9]{2,} [0-9]{2,}:[0-9]{2,}( )*file2]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Actual output:   [null]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                  Comparator: [RegexpComparator]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:          Comparision result:   [fail]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:             Expected output:   [^-rw-r--r--( )*1( )*[a-z]*( )*supergroup( )*0( )*[0-9]{4,}-[0-9]{2,}-[0-9]{2,} [0-9]{2,}:[0-9]{2,}( )*file3]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Actual output:   [null]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                  Comparator: [RegexpComparator]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:          Comparision result:   [fail]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:             Expected output:   [^-rw-r--r--( )*1( )*[a-z]*( )*supergroup( )*0( )*[0-9]{4,}-[0-9]{2,}-[0-9]{2,} [0-9]{2,}:[0-9]{2,}( )*file4]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Actual output:   [null]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper: -------------------------------------------
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                     Test ID: [4]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Test Description: [ls: directory using absolute path]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -mkdir /tmp/testcli_1466091450177/dir1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:               Test Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -ls /tmp/testcli_1466091450177/]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:            Cleanup Commands: [-fs hdfs://nn-hdptemptest-ci-661.test.altiscale.com:8020 -rm -r /tmp/testcli_1466091450177/dir1]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:                  Comparator: [RegexpComparator]
+ 16/06/16 15:37:37 INFO cli.CLITestHelper:          Comparision result:   [fail]
+
+   Wrap lines [ ]
+   Generated by Gradle 2.7 at Jun 16, 2016 3:37:37 PM
+
+~/odpi-acceptance-1.0.1
+## bigtop-tests/spec-tests/runtime/build/reports/tests/classes/org.odpi.specs.runtime.TestSpecsRuntime.html
+                 Class org.odpi.specs.runtime.TestSpecsRuntime
+
+   all > org.odpi.specs.runtime > TestSpecsRuntime
+
+   39    0        0       7.321s   100%
+
+   tests failures ignored duration successful
+
+     * Tests
+     * Standard error
+
+Tests
+
+                 Test                Duration Result
+   testAll[HADOOP_BINCONTENT_COMMON] 0.114s   passed
+   testAll[HADOOP_BINCONTENT_HDFS]   0.076s   passed
+   testAll[HADOOP_BINCONTENT_MAPRED] 0.075s   passed
+   testAll[HADOOP_BINCONTENT_YARN]   0.105s   passed
+   testAll[HADOOP_CNATIVE1]          0.722s   passed
+   testAll[HADOOP_CNATIVE2]          0.721s   passed
+   testAll[HADOOP_COMPRESSION]       0.727s   passed
+   testAll[HADOOP_DIRSTRUCT_COMMON]  0.582s   passed
+   testAll[HADOOP_DIRSTRUCT_HDFS]    0.203s   passed
+   testAll[HADOOP_DIRSTRUCT_MAPRED]  0.216s   passed
+   testAll[HADOOP_DIRSTRUCT_YARN]    0.159s   passed
+   testAll[HADOOP_EC1]               0.178s   passed
+   testAll[HADOOP_EC2]               0.015s   passed
+   testAll[HADOOP_EC3]               0.015s   passed
+   testAll[HADOOP_EC4]               0.014s   passed
+   testAll[HADOOP_EC5]               0.001s   passed
+   testAll[HADOOP_EH1]               0.018s   passed
+   testAll[HADOOP_EH2]               0.018s   passed
+   testAll[HADOOP_EH3]               0.019s   passed
+   testAll[HADOOP_EJH1]              0.020s   passed
+   testAll[HADOOP_EJH2_HADOOP]       0.003s   passed
+   testAll[HADOOP_EJH2_YARN]         0.002s   passed
+   testAll[HADOOP_EM1]               0.017s   passed
+   testAll[HADOOP_EM2]               0.016s   passed
+   testAll[HADOOP_EM3]               0.022s   passed
+   testAll[HADOOP_EY1]               0.017s   passed
+   testAll[HADOOP_EY2]               0.017s   passed
+   testAll[HADOOP_EY3]               0.017s   passed
+   testAll[HADOOP_GETCONF]           1.623s   passed
+   testAll[HADOOP_HNATIVE1]          0.021s   passed
+   testAll[HADOOP_JARCONTENT_COMMON] 0.164s   passed
+   testAll[HADOOP_JARCONTENT_HDFS]   0.059s   passed
+   testAll[HADOOP_JARCONTENT_MAPRED] 0.056s   passed
+   testAll[HADOOP_JARCONTENT_YARN]   0.074s   passed
+   testAll[HADOOP_MNATIVE1]          0.716s   passed
+   testAll[HADOOP_PLATVER]           0.312s   passed
+   testAll[HADOOP_SUBPROJS]          0.136s   passed
+   testAll[HADOOP_TOOLS]             0.034s   passed
+   testAll[HADOOP_YNATIVE1]          0.017s   passed
+
+Standard error
+
+ log4j:ERROR Could not instantiate class [org.apache.hadoop.log.metrics.EventCounter].
+ java.lang.ClassNotFoundException: org.apache.hadoop.log.metrics.EventCounter
+         at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+         at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+         at java.security.AccessController.doPrivileged(Native Method)
+         at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+         at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+         at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+         at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+         at java.lang.Class.forName0(Native Method)
+         at java.lang.Class.forName(Class.java:190)
+         at org.apache.log4j.helpers.Loader.loadClass(Loader.java:198)
+         at org.apache.log4j.helpers.OptionConverter.instantiateByClassName(OptionConverter.java:327)
+         at org.apache.log4j.helpers.OptionConverter.instantiateByKey(OptionConverter.java:124)
+         at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:785)
+         at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+         at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:648)
+         at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:514)
+         at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+         at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+         at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+         at org.apache.log4j.Logger.getLogger(Logger.java:104)
+         at org.apache.commons.logging.impl.Log4JLogger.getLogger(Log4JLogger.java:283)
+         at org.apache.commons.logging.impl.Log4JLogger.<init>(Log4JLogger.java:108)
+         at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+         at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+         at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+         at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+         at org.apache.commons.logging.impl.LogFactoryImpl.createLogFromClass(LogFactoryImpl.java:1040)
+         at org.apache.commons.logging.impl.LogFactoryImpl.discoverLogImplementation(LogFactoryImpl.java:838)
+         at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:601)
+         at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:333)
+         at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:307)
+         at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:645)
+         at org.apache.commons.logging.LogFactory$getLog.call(Unknown Source)
+         at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
+         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+         at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+         at org.apache.bigtop.itest.shell.Shell.<clinit>(Shell.groovy:25)
+         at java.lang.Class.forName0(Native Method)
+         at java.lang.Class.forName(Class.java:190)
+         at org.odpi.specs.runtime.TestSpecsRuntime.class$(TestSpecsRuntime.groovy)
+         at org.odpi.specs.runtime.TestSpecsRuntime.$get$$class$org$apache$bigtop$itest$shell$Shell(TestSpecsRuntime.groovy)
+         at org.odpi.specs.runtime.TestSpecsRuntime.getEnvMap(TestSpecsRuntime.groovy:70)
+         at org.odpi.specs.runtime.TestSpecsRuntime.getEnv(TestSpecsRuntime.groovy:86)
+         at org.odpi.specs.runtime.TestSpecsRuntime.this$2$getEnv(TestSpecsRuntime.groovy)
+         at org.odpi.specs.runtime.TestSpecsRuntime$this$2$getEnv.callCurrent(Unknown Source)
+         at org.odpi.specs.runtime.TestSpecsRuntime.testAll(TestSpecsRuntime.groovy:106)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+         at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+         at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+         at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+         at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+         at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+         at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+         at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+         at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+         at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+         at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+         at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+         at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+         at org.junit.runners.Suite.runChild(Suite.java:127)
+         at org.junit.runners.Suite.runChild(Suite.java:26)
+         at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+         at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+         at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+         at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+         at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+         at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:105)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
+         at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+         at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+         at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+         at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+         at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+         at java.lang.reflect.Method.invoke(Method.java:606)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+         at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+         at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+         at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+         at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+         at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+         at java.lang.Thread.run(Thread.java:744)
+ log4j:ERROR Could not instantiate appender named "EventCounter".
+
+   Wrap lines [ ]
+   Generated by Gradle 2.7 at Jun 16, 2016 3:43:16 PM
