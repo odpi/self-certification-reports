@@ -10,7 +10,7 @@ Pritesh Maker (pritesh@datatorrent.com)
 Hadoop common, HDFS, Yarn
 
 ## d. Which ODPi­compliant distributions and versions did you test with? 
-ODPi Reference, Hortonworks HDP 2.3
+ODPi Reference, Hortonworks HDP 2.4.2
 
 ## e. Please describe your application deployment and configuration process (if any). If the application lends itself to be managed by a tool compatible with ODPi Operations specification please make sure to use the appropriate tool. 
 
@@ -36,4 +36,4 @@ No
 No
 
 ## j. Which ODPi­compliant distributions and versions do you provide support for in the deployment of your software?
-Hortonworks HDP 2.3
+Hortonworks HDP 2.4.2
