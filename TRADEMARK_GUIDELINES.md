@@ -1,5 +1,15 @@
 # ODPi Compliance Trademark Guidelines
 
+## Table of Contents
+
+* [1 ODPi Compliance Trademark Guidelines](#odpi-compliance-trademark-guidelines)
+  * [1.1 Purpose of this document](#purpose-of-this-document)
+    * [1.1.1 Definitions](#definitions)
+  * [1.2 Designations](#designations)
+    * [1.2.1 ODPi Runtime Compliant](#odpi-runtime-compliant)
+    * [1.2.2 ODPi Operations Compliant](#odpi-operations-compliant)
+    * [1.2.3 ODPi Interoperable](#odpi-interoperable)
+
 ## Purpose of this document
 
 This document outlines the explains various how ODPi Compliance designations can be used by organizations to indicate compliance with the ODPi Runtime Specification and ODPi Operations Specification. ODPi Compliance trademarks are intended to be used by organizations to promote their compliance with the big data industry standards governed by ODPi.
