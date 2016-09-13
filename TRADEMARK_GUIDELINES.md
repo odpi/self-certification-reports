@@ -8,7 +8,7 @@ This document outlines the explains various how ODPi Compliance designations can
 
 **Platform** - A product or service offering that consists of Apache Hadoop™, and optionally includes additional open source and/or commercial components that work with Apache Hadoop™.
 
-**Platform Vendor **- An organization, either a commercial vendor or an open source project, that either produces a packaged version of the Platform or supports a service offering around the platform aimed at end-user consumption.
+**Platform Vendor** - An organization, either a commercial vendor or an open source project, that either produces a packaged version of the Platform or supports a service offering around the platform aimed at end-user consumption.
 
 **Application** - A product that is intended to interoperate with a Platform.
 
