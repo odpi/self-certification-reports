@@ -11,13 +11,13 @@ vgoel@pivotal.io
 Hadoop Common, HDFS, YARN  
 
 **IV. Which ODPi-compliant distributions and versions did you test with?**  
-ODPi Reference, Hortonworks HDP 2.4  
+ODPi Reference, Hortonworks HDP 2.4.2  
 
 **V. Please describe your application deployment and configuration process (if any). If the application lends itself to be managed by a tool compatible with ODPi Operations specification please make sure to use the appropriate tool.**  
 Pivotal HDB and Apache HAWQ can be installed and configured through a manual process, as well as via Apache Ambari.  For purposes of interoperability testing, we installed Pivotal HDB through a manual process.
 
 **VI. Please describe your testing procedure you use to demonstrate compatibility and what passing results will be.**  
-Here is an overview of the testing procedure we ran to test Pivotal HDB with the ODPi Reference Implementation of Hadoop as well as one of the first ODPi Runtime Compliant distributions, Hortonworks HDP v. 2.4.   
+Here is an overview of the testing procedure we ran to test Pivotal HDB with the ODPi Reference Implementation of Hadoop as well as one of the first ODPi Runtime Compliant distributions, Hortonworks HDP v. 2.4.2   
 
 We tested the same version of Pivotal HDB software using the same configuration settings against both platforms. The installation was successful in both cases, and the tests finished identically.  
 1. Install ODPi-compliant Hadoop Distribution onto cluster. Expected result:Hadoop cluster alive and functioning normally.  
@@ -40,4 +40,4 @@ Pivotal HDB executed all 99 queries of the benchmark test without issue. The exe
 	No difference.
 	
 **X. Which ODPi-compliant distributions and versions do you provide support for in the deployment of your software?**  
-	Hortonworks HDP 2.4
+	Hortonworks HDP 2.4.2
