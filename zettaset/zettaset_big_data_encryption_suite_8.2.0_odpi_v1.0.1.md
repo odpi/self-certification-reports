@@ -23,9 +23,9 @@ Deployment and configuration can be accomplished using Apache Ambari or CLI
 
 Interoperability pass/fail testing was completed in April 2016 by Hortonworks in their test facility. The Zettaset Big Data Encryption Suite, including BDEncrypt Plus v8.2.0, successfully passed the interoperability tests.  No test data was provided by Hortonworks.  Zettaset achieved “triple” interoperability certification as follows:
 
-a.	HDP – The HDP Certified badge indicates that Zettaset’s Big Data Encryption suite has been certified to work with Hortonworks Data Platform (HDP), reviewed for architectural best practices and validated against a comprehensive suite of integration test cases, benchmarked for scale under varied workloads and comprehensively documented. 
-b.	Security Ready - Apache Hadoop is secured with a number of technologies, such as Kerberos, Apache Knox, and Apache Ranger. Security Ready certification indicates the Zettaset solution is integrated with these technologies. 
-c.	Operations Ready - Apache Ambari is the open source management fabric for Hadoop. Operations Ready certification indicates the Zettaset solution is integrated with Ambari APIs.
+- HDP – The HDP Certified badge indicates that Zettaset’s Big Data Encryption suite has been certified to work with Hortonworks Data Platform (HDP), reviewed for architectural best practices and validated against a comprehensive suite of integration test cases, benchmarked for scale under varied workloads and comprehensively documented. 
+- Security Ready - Apache Hadoop is secured with a number of technologies, such as Kerberos, Apache Knox, and Apache Ranger. Security Ready certification indicates the Zettaset solution is integrated with these technologies. 
+- Operations Ready - Apache Ambari is the open source management fabric for Hadoop. Operations Ready certification indicates the Zettaset solution is integrated with Ambari APIs.
 
 Interoperability pass/fail testing was completed in April 2016 by IBM in their test facility. The Zettaset Big Data Encryption Suite, including BDEncrypt Plus v8.2.0, successfully passed the interoperability tests.  No test data was provided by IBM.
 
