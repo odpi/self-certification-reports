@@ -1,0 +1,34 @@
+a. Product name / version
+IIDR for Apache Hadoop V11.3.3
+
+b. Primary contact for questions on this questionnaire
+
+Paul Cadarette (pcadaret@us.ibm.com)
+
+c. Which technologies governed by the ODPi Runtime Specification does this application interoperate with?
+
+Hadoop common, HDFS
+
+d. Which ODPi compliant distributions and versions did you test with?
+
+BigInsights 4.2, Hortonworks HDP 2.4.3
+
+e. Please describe your testing procedure you use to demonstrate compatibility of a Hadoop distribution, and what passing results will be.
+
+The testing involved replicating from an on-prem source, such as DB2/z, to a certified hadoop distribution.  This is part of our normal regression testing. Our tests exercised WebHDFS API calls to HDFS. The tests were deemed passing because the results were the same as previous versions of Hortonworks and BigInsghts.
+
+f. What modifications did you make to your software or underlying configurations for each distribution in order for them to pass?
+
+We did not make any modifications to our software and we did not make any underlying configuration changes.
+
+g. Did you test with any ODPi compliant distributions that did not pass your interoperability tests?
+
+No.
+
+h. Did you notice any different behavior in your software or the underlying distributions when you ran your tests, whether or not you deemed the tests as passing?
+
+No.
+
+i. Which ODPi compliant distributions and versions do you provide support for in the deployment of your software?
+
+Hortonworks HDP 2.4.2   IBM  IOP 4.2
