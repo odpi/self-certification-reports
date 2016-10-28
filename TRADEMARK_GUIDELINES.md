@@ -86,18 +86,18 @@ To show continuing compliance, Platform Vendors should re-complete the ODPi Comp
   </tr>
   <tr>
     <td>What is it</td>
-    <td>This designation confirms that a specific version of a Platform has been successfully tested against the ODPi Operations Specification test harness. The ODPi Operations Compliant designation attaches to the specific version of the Platform that was tested. All new versions must be re-tested for compliance.</td>
+    <td>This designation confirms that a specific version of a Platform is following ODPi Operations Specification guidelines. It also confirms that when a platform gets deployed using a bundled Hadoop Management Tool the result is ODPi Runtime compliant. The ODPi Operations Compliant designation attaches to the specific version of the Platform that was tested. All new versions must be re-tested for compliance.</td>
   </tr>
   <tr>
     <td>When can a Platform claim to be ODPi Operations Compliant</td>
     <td>ODPi provides details to End Users about which versions of a Platform are ODPi Operations Complaint with ODPi Specification Releases.
 
-Initial compliance is achieved when a Platform Vendor has successfully tested a version of their Platform using the ODPi Operations Test Harness for the given ODPi Specification Release. This should be done following the ODPi Compliance Process and must be verified and approved by the ODPi TSC.  
+Initial compliance is achieved when a Platform Vendor has successfully tested a version of their Platform for the given ODPi Specification Release. This should be done following the ODPi Compliance Process and must be verified and approved by the ODPi TSC.  
 To show continuing compliance, Platform Vendors should re-complete the ODPi Compliance Process whenever they release a new version of their Platform, or for any future ODPi Specification Release.</td>
   </tr>
   <tr>
     <td>How can the ODPi Operations Compliant Designation be used</td>
-    <td>Once a Platform Vendor has successfully tested a version of their Platform using ODPi Operations Test Harness, they may request the ODPi Operations Compliant logo from ODPi. They may use this logo on their product collateral and web pages for the compliant version. They may also use the term "ODPi Operations Compliant" in their literature, and online, to describe the compliant version in compliance with the ODPi Trademark Policy.  </td>
+    <td>Once a Platform Vendor has successfully tested a version of their Platform, they may request the ODPi Operations Compliant logo from ODPi. They may use this logo on their product collateral and web pages for the compliant version. They may also use the term "ODPi Operations Compliant" in their literature, and online, to describe the compliant version in compliance with the ODPi Trademark Policy.  </td>
   </tr>
 </table>
 
@@ -130,6 +130,10 @@ To show continuing compliance, Application Vendors should  re-complete the ODPi 
   <tr>
     <td>How can the ODPi Interoperable designation be used</td>
     <td>After compliance has been confirmed, a Software Vendor may request the ODPi Interoperable logo from ODPi. They may use this logo on their product collateral and web pages for the compliant version. They may also use the term "ODPi Interoperable" in their literature, and online, to describe the compliant version. In addition, ODPi will look to advertise the Application compliance in ODPi marketing literature.  </td>
+  </tr>
+  <tr>
+    <td>Level of ODPi compliance required from a distribution used for testing</td>
+    <td>ODPi Interoperable designation can only be awarded when an application gets tested on an ODPi Runtime Compliant distribution. ODPi strongly encourages, but doesn't currently require, testing on Distributions that are also ODPi Operations Compliant. ODPi Core reference implementation and a few popular commercial Distributions are both ODPi Runtime and ODPi Operations Compliant and thus represent an ideal choice for testing applications for ODPi Interoperable designation.</td>
   </tr>
 </table>
 
