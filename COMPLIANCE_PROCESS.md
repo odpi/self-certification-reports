@@ -34,8 +34,6 @@ This document outlines the process needed for a product to fulfill the requireme
 
 **ODPi Operations Specification** - Specification developed by the ODPi community that describes expected operational behavior of an Apache Hadoop-based platform, located at [https://github.com/odpi/specs/blob/master/ODPi-Operations.md](https://github.com/odpi/specs/blob/master/ODPi-Operations.md).
 
-**ODPi Operations Test Harness** - Test harness developed by the ODPi community that verifies expected operational behavior of an Apache Hadoop-based platform, available for download at [http://repo.odpi.org/ODPi/1.0/acceptance-tests/](http://repo.odpi.org/ODPi/1.0/acceptance-tests/).
-
 **ODPi Specification Release** - A published version of the ODPi Runtime or ODPi Operations Specifications with an associated version number.
 
 **ODPi Compliance Process** - The process defined by the ODPi TSC to validate and verify compliance with an ODPi Specification Release for an Platform Vendor or a Software Vendor.
@@ -57,7 +55,7 @@ The following matrix indicates the available programs, along with specification(
   </tr>
   <tr>
     <td>ODPi Operations Compliant</td>
-    <td>Confirms that a specific version of Platform has been successfully tested against the ODPi Operations Specification test harness.</td>
+    <td>Confirms that a specific version of Platform is following ODPi Operations Specification guidelines. It also confirms that when a platform gets deployed using a bundled Hadoop Management Tool the result is ODPi Runtime compliant.</td>
     <td>Platform Vendor</td>
   </tr>
   <tr>
@@ -98,23 +96,17 @@ sudo yum install links
 
 1. Review the most recently published [ODPi Operations Spec](https://github.com/odpi/specs/blob/master/ODPi-Operations.md).
 
-2. Download the [latest acceptance test suite](http://repo.odpi.org/ODPi/1.0/acceptance-tests/).
+2. Deploy a platform using a bundled Hadoop Management Tool.
 
-3. Unzip the test package on the primary machine on your Hadoop cluster you wish to test.
+3. Verify that the resulting platform confirms to the ODPi Runtime specification as per previous section.
 
-4. Install links on the primary machine on your Hadoop cluster you wish to test ( Either grab source from [http://links.twibright.com/download.php](http://links.twibright.com/download.php) or use the command below to install )
-<pre>
-sudo yum install links
-</pre>
-5. Run the tests, optionally outputting the results to a text file.
-<pre>
-./run_itest.sh > testresults.txt
-</pre>
-6. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
+4. Capture environment information using script available under http://XXXX 
 
-7. A member of the ODPi TSC will review and merge in.
+5. Issue a pull request with the text output of steps #3 and #4 in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
 
-8. A member of the ODPi marketing team will follow up with trademark assets and guidelines for advertising ODPi compliance.
+6. A member of the ODPi TSC will review and merge in.
+
+7. A member of the ODPi marketing team will follow up with trademark assets and guidelines for advertising ODPi compliance.
 
 ### ODPi Interoperable
 
@@ -132,17 +124,19 @@ sudo yum install links
 
     4. Which ODPi-compliant distributions and versions did you test with?
 
-    5. Please describe your application deployment and configuration process (if any). If the application lends itself to be managed by a tool compatible with ODPi Operations specification please make sure to use the appropriate tool.
+    5. Did you deploy, configure and operated your application using ODPi Operations compatible Hadoop Management Tool?
 
-    6. Please describe your testing procedure you use to demonstrate compatibility and what passing results will be.
+    6. If your application supports a deployment and configuration model other than using and ODPi Operations compatible Hadoop Management Tool please describe it here.
 
-    7. What modifications did you make to your software or underlying configurations for each distribution in order for them to pass?
+    7. Please describe your testing procedure you use to demonstrate compatibility and what passing results will be.
 
-    8. Did you test with any ODPi-compliant distributions that did not pass your interoperability tests?
+    8. What modifications did you make to your software or underlying configurations for each distribution in order for them to pass?
 
-    9. Did you notice any different behavior in your software or the underlying distributions when you ran your tests, whether or not you deemed the tests as passing?
+    9. Did you test with any ODPi-compliant distributions that did not pass your interoperability tests?
 
-    10. Which ODPi-compliant distributions and versions do you provide support for in the deployment of your software?
+   10. Did you notice any different behavior in your software or the underlying distributions when you ran your tests, whether or not you deemed the tests as passing?
+
+   11. Which ODPi-compliant distributions and versions do you provide support for in the deployment of your software?
 
 4. Issue a pull request with the text output in a file using the naming convention: <vendor name>/$PRODUCT_NAME_AND_VERSION-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
 
