@@ -1,0 +1,39 @@
+a. Product name / version
+IBM InfoSphere Big Match for Hadoop v11.5.0.2
+http://www-03.ibm.com/software/products/en/infosphere-big-match-for-hadoop
+
+b. Primary contact for questions on this questionnaire
+
+Pankuj Chachra pankuj@us.ibm.com
+
+c. Which technologies governed by the ODPi Runtime Specification does this application interoperate with?
+
+HDFS, HBase, Oozie, MapReduce, Spark
+
+d. Which ODPi compliant distributions and versions did you test with?
+
+IBM BigInsights IOP 4.2, Hortonworks HDP 2.4.2
+
+e. Please describe your testing procedure you use to demonstrate compatibility of a Hadoop distribution, and what passing results will be.
+
+1. Run Bigmatch Derive, Compare, Link jobs. Verify the derived and linked data.  This uses Map reduce jobs (Yarn/MR2) 
+2. Use the Big Match API/REST to retrieve results (search, API) . This uses Hbase Java and REST APIs. 
+3. Run the PME Export bulk Job, read results from the export table. This utilizes HBase bulk load 
+4. Use Apache Oozie as workflow scheduler for Big Match link workflow. 
+5. Run the Bucket Analysis Big Match Oozie workflow. This utilizes Spark.
+
+f. What modifications did you make to your software or underlying configurations for each distribution in order for them to pass?
+
+Oozie and Hbase configuration is modified during big match install to add big match hooks/Hbase co processors.
+
+g. Did you test with any ODPi compliant distributions that did not pass your interoperability tests?
+
+No.
+
+h. Did you notice any different behavior in your software or the underlying distributions when you ran your tests, whether or not you deemed the tests as passing?
+
+No.
+
+i. Which ODPi compliant distributions and versions do you provide support for in the deployment of your software?
+
+Hortonworks HDP 2.4.2 , IOP 4.2
