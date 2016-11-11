@@ -82,15 +82,31 @@ There are specific steps required for each compliance program for the vendor to 
 <pre>
 sudo yum install links
 </pre>
-5. Run the tests, optionally outputting the results to a text file.
+5. Use `./run_itest.sh -h` or `./run_itest.sh --help` to display arguments and defaults.
+<pre>
+Usage : ./run_itest.sh [-options]
+
+   -j, --hivejdbc             hive jdbc url - default: e.g. jdbc:hive2://localhost:10000
+   -m, --hivemeta             hive metastore url - default: thrift://localhost:9083
+   -l, --hivelocation         location of hdfs for hive to write to - default: /user/<current user>
+   -u, --hiveuser             hive user - default: current user
+   -p, --hivepassword         hive user password - default: current user
+   -t, --hivethrift           optional: true/false to test thrift, defaults to true
+   -c, --hivecatalog          optional: true/false to test HCatalog, default to true
+   -C, --hiveconf             hive conf dir - default: /etc/hive/conf
+   -F, --hadoopconf           hadoop user - default: /etc/hadoop/conf
+   -i, --info                 optional: info/debug
+   -h, --help                 display this help and exit
+</pre>
+6. Run the tests, with needed arguments and optionally outputting the results to a text file.
 <pre>
 ./run_itest.sh > testresults.txt
 </pre>
-6. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
+7. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
 
-7. A member of the ODPi TSC will review and merge in.
+8. A member of the ODPi TSC will review and merge in.
 
-8. A member of the ODPi marketing team will follow up with trademark assets and guidelines for advertising ODPi compliance.
+9. A member of the ODPi marketing team will follow up with trademark assets and guidelines for advertising ODPi compliance.
 
 ### ODPi Operations Compliant
 
