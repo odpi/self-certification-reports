@@ -30,7 +30,7 @@ This document outlines the process needed for a product to fulfill the requireme
 
 **ODPi Runtime Specification** - Specification developed by the ODPi community that describes expected runtime behavior of a platform, located at [https://github.com/odpi/specs/blob/master/ODPi-Runtime.md](https://github.com/odpi/specs/blob/master/ODPi-Runtime.md).
 
-**ODPi Runtime Test Harness** - Test harness developed by the ODPi community that verifies expected runtime behavior of an Apache Hadoop-based platform, available for download at [http://repo.odpi.org/ODPi/1.0/acceptance-tests/](http://repo.odpi.org/ODPi/1.0/acceptance-tests/).
+**ODPi Runtime Test Harness** - Test harness developed by the ODPi community that verifies expected runtime behavior of an Apache Hadoop-based platform, available for download at [http://repo.odpi.org/ODPi/latest/acceptance-tests/](http://repo.odpi.org/ODPi/latest/acceptance-tests/).
 
 **ODPi Operations Specification** - Specification developed by the ODPi community that describes expected operational behavior of an Apache Hadoop-based platform, located at [https://github.com/odpi/specs/blob/master/ODPi-Operations.md](https://github.com/odpi/specs/blob/master/ODPi-Operations.md).
 
@@ -72,9 +72,9 @@ There are specific steps required for each compliance program for the vendor to 
 
 ### ODPi Runtime Compliant
 
-1. Review the most recently published [ODPi Runtime Spec](https://github.com/odpi/specs/blob/v1.0.0/ODPi-Runtime.md).
+1. Review the most recently published [ODPi Runtime Spec](https://github.com/odpi/specs/blob/master/ODPi-Runtime.md).
 
-2. Download the [latest acceptance test suite](http://repo.odpi.org/ODPi/1.0/acceptance-tests/).
+2. Download the [latest acceptance test suite](http://repo.odpi.org/ODPi/latest/acceptance-tests/).
 
 3. Unzip the test package on the primary machine on your Hadoop cluster you wish to test.
 
@@ -126,7 +126,7 @@ Usage : ./run_itest.sh [-options]
 
 ### ODPi Interoperable
 
-1. Review the most recently published [ODPi Runtime Spec](https://github.com/odpi/specs/blob/v1.0.0/ODPi-Runtime.md) and [ODPi Operations Spec](https://github.com/odpi/specs/blob/master/ODPi-Operations.md).
+1. Review the most recently published [ODPi Runtime Spec](https://github.com/odpi/specs/blob/master/ODPi-Runtime.md) and [ODPi Operations Spec](https://github.com/odpi/specs/blob/master/ODPi-Operations.md).
 
 2. Install (or gain access to) a Platform that is compliant with the latest version of the ODPi Specification Release. While it is not strictly required, we highly recommend that you also consider installing an ODPi reference implementation platform in addition to a vendor’s one. Running the tests on ODPi reference implementation guarantees that only ODPi core component get deployed and also helps with having an access to a 100% open platform, unencumbered with EULAs.
 
