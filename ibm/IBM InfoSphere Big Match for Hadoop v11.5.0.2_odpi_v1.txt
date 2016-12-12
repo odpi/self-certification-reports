@@ -8,7 +8,7 @@ Pankuj Chachra pankuj@us.ibm.com
 
 c. Which technologies governed by the ODPi Runtime Specification does this application interoperate with?
 
-HDFS, HBase, Oozie, MapReduce, Spark
+HDFS, MapReduce
 
 d. Which ODPi compliant distributions and versions did you test with?
 
