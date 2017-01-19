@@ -1,0 +1,29 @@
+This certification report is for ODPi v2.0.1 on IBMs IOP v4.2 distribution. 
+
+The results have a few failures that have JIRAs already filed for them. I have noted the failures and associated JIRA below.
+
+1. org.apache.bigtop.itest.hadoop.hcfs.TestFuseDFS > classMethod FAILED
+    java.lang.AssertionError: Failed: hadoop-fuse-dfs mount expected:<0> but was:<127>
+    https://jira.odpi.org/browse/ODPI-152
+    
+2. org.apache.bigtop.itest.hadoop.hcfs.TestFuseDFS > classMethod FAILED
+    java.lang.AssertionError: Failed: FUSE-DFS mount not cleaned up expected:<0> but was:<1>
+    https://jira.odpi.org/browse/ODPI-152
+    
+3. org.apache.bigtop.itest.hadoop.hcfs.TestCLI > testAll FAILED
+    java.lang.AssertionError: HDFS trash should be disabled via fs.trash.interval expected:<0> but was:<360>
+    https://jira.odpi.org/browse/ODPI-153
+    
+4. org.apache.bigtop.itest.hadoop.hdfs.TestHDFSCLI > testAll FAILED
+    java.lang.AssertionError: HDFS trash should be disabled via fs.trash.interval expected:<0> but was:<360>
+    https://jira.odpi.org/browse/ODPI-153
+    
+Other notes:
+1. Gave sudo permission to yarn user.
+2. Installed links, "sudo yum -y install links"
+3. Added the following to ~/.bashrc
+export HADOOP_MAPRED_HOME=/usr/iop/current/hadoop-mapreduce-client/
+export HIVE_HOME=/usr/iop/current/hive-client/
+4. Created /user/yarn folder in hdfs and chown to yarn user.
+5. Had to run the test suite with yarn user so the yarn refresh queues test would work.
+6. Ran the test suite via "./run_itest.sh -u hive -p hive --info info > odpi-2.0.log 2>&1"
