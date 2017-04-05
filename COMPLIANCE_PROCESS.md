@@ -82,8 +82,11 @@ There are specific steps required for each compliance program for the vendor to 
 <pre>
 sudo yum install links
 </pre>
+
 5. Run with user that has yarn admin privilages.
+
 6. Make sure that user has passwordless sudo access and has a home directory e.g. /user/yarn in HDFS.
+
 7. Use `./run_itest.sh -h` or `./run_itest.sh --help` to display arguments and defaults.
 <pre>
 Usage : ./run_itest.sh [-options]
@@ -100,15 +103,17 @@ Usage : ./run_itest.sh [-options]
    -i, --info                 optional: info/debug
    -h, --help                 display this help and exit
 </pre>
-6. Run the tests, with needed arguments and optionally outputting the results to a text file.
+
+8. Run the tests, with needed arguments and optionally outputting the results to a text file.
 <pre>
 ./run_itest.sh --info info > testresults.log 2>&1
 </pre>
-7. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
 
-8. A member of the ODPi TSC will review and merge in.
+9. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
 
-9. A member of the ODPi marketing team will follow up with trademark assets and guidelines for advertising ODPi compliance.
+10. A member of the ODPi TSC will review and merge in.
+
+11. A member of the ODPi marketing team will follow up with trademark assets and guidelines for advertising ODPi compliance.
 
 ### ODPi Operations Compliant
 
