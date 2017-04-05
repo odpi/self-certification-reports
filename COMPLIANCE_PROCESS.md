@@ -82,15 +82,17 @@ There are specific steps required for each compliance program for the vendor to 
 <pre>
 sudo yum install links
 </pre>
-5. Use `./run_itest.sh -h` or `./run_itest.sh --help` to display arguments and defaults.
+5. Run with user that has yarn admin privilages.
+6. Make sure that user has passwordless sudo access and has a home directory e.g. /user/yarn in HDFS.
+7. Use `./run_itest.sh -h` or `./run_itest.sh --help` to display arguments and defaults.
 <pre>
 Usage : ./run_itest.sh [-options]
 
    -j, --hivejdbc             hive jdbc url - default: e.g. jdbc:hive2://localhost:10000
    -m, --hivemeta             hive metastore url - default: thrift://localhost:9083
-   -l, --hivelocation         location of hdfs for hive to write to - default: /user/<current user>
-   -u, --hiveuser             hive user - default: current user
-   -p, --hivepassword         hive user password - default: current user
+   -l, --hivelocation         location of hdfs for hive to write to - default: /tmp/<current user>
+   -u, --hiveuser             hive user - default: hive
+   -p, --hivepassword         hive user password - default: hive
    -t, --hivethrift           optional: true/false to test thrift, defaults to true
    -c, --hivecatalog          optional: true/false to test HCatalog, default to true
    -C, --hiveconf             hive conf dir - default: /etc/hive/conf
@@ -100,7 +102,7 @@ Usage : ./run_itest.sh [-options]
 </pre>
 6. Run the tests, with needed arguments and optionally outputting the results to a text file.
 <pre>
-./run_itest.sh > testresults.txt
+./run_itest.sh --info info > testresults.log 2>&1
 </pre>
 7. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
 
