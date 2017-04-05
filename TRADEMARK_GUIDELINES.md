@@ -28,11 +28,11 @@ This document outlines the explains various how ODPi Compliance designations can
 
 **ODPi Runtime Specification** - Specification developed by the ODPi community, located at [https://github.com/odpi/specs/blob/master/ODPi-Runtime.md](https://github.com/odpi/specs/blob/master/ODPi-Runtime.md).
 
-**ODPi Runtime Test Harness** - Test harness developed by the ODPi community, available for download at [http://repo.odpi.org/ODPi/1.0/acceptance-tests/](http://repo.odpi.org/ODPi/1.0/acceptance-tests/).
+**ODPi Runtime Test Harness** - Test harness developed by the [Apache Bigtop](https://bigtop.apache.org) community, available for download at [https://www.apache.org/dist/bigtop/1.2.0/bigtop-1.2.0-testsuite.zip](https://www.apache.org/dist/bigtop/1.2.0/bigtop-1.2.0-testsuite.zip).
 
 **ODPi Operations Specification** - Specification developed by the ODPi community, located at [https://github.com/odpi/specs/blob/master/ODPi-Operations.md](https://github.com/odpi/specs/blob/master/ODPi-Operations.md).
 
-**ODPi Operations Test Harness** - Test harness developed by the ODPi community, available for download at [http://repo.odpi.org/ODPi/1.0/acceptance-tests/](http://repo.odpi.org/ODPi/1.0/acceptance-tests/).
+**ODPi Operations Test Harness** - Test harness developed by the [Apache Bigtop](https://bigtop.apache.org) community, available for download at [https://www.apache.org/dist/bigtop/1.2.0/bigtop-1.2.0-testsuite.zip](https://www.apache.org/dist/bigtop/1.2.0/bigtop-1.2.0-testsuite.zip).
 
 **ODPi Specification Release** - A release of the ODPi Runtime Specification or ODPi Operations Specification.
 

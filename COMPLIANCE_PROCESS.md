@@ -30,7 +30,7 @@ This document outlines the process needed for a product to fulfill the requireme
 
 **ODPi Runtime Specification** - Specification developed by the ODPi community that describes expected runtime behavior of a platform, located at [https://github.com/odpi/specs/blob/master/ODPi-Runtime.md](https://github.com/odpi/specs/blob/master/ODPi-Runtime.md).
 
-**ODPi Runtime Test Harness** - Test harness developed by the ODPi community that verifies expected runtime behavior of an Apache Hadoop-based platform, available for download at [http://repo.odpi.org/ODPi/latest/acceptance-tests/](http://repo.odpi.org/ODPi/latest/acceptance-tests/).
+**ODPi Runtime Test Harness** - Test harness developed by the [Apache Bigtop](https://bigtop.apache.org) community that verifies expected runtime behavior of an Apache Hadoop-based platform, available for download at [https://www.apache.org/dist/bigtop/1.2.0/bigtop-1.2.0-testsuite.zip](https://www.apache.org/dist/bigtop/1.2.0/bigtop-1.2.0-testsuite.zip).
 
 **ODPi Operations Specification** - Specification developed by the ODPi community that describes expected operational behavior of an Apache Hadoop-based platform, located at [https://github.com/odpi/specs/blob/master/ODPi-Operations.md](https://github.com/odpi/specs/blob/master/ODPi-Operations.md).
 
@@ -74,7 +74,7 @@ There are specific steps required for each compliance program for the vendor to 
 
 1. Review the most recently published [ODPi Runtime Spec](https://github.com/odpi/specs/blob/master/ODPi-Runtime.md).
 
-2. Download the [latest acceptance test suite](http://repo.odpi.org/ODPi/latest/acceptance-tests/).
+2. Download the [latest Apache Bigtop acceptance test suite](https://www.apache.org/dist/bigtop/1.2.0/bigtop-1.2.0-testsuite.zip).
 
 3. Unzip the test package on the primary machine on your Hadoop cluster you wish to test.
 
