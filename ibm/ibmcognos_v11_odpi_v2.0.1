@@ -1,0 +1,37 @@
+a. Product name / version
+Cognos Analytics
+http://www.ibm.com/analytics/us/en/technology/products/cognos-analytics/
+For Versions see
+https://www-01.ibm.com/support/docview.wss?uid=swg27047186
+
+b. Primary contact for questions on this questionnaire
+
+Nigel.Campbell@ca.ibm.com and Susan Malaika malaika@us.ibm.com
+
+c. Which technologies governed by the ODPi Runtime Specification does this application interoperate with?
+
+Hive
+
+d. Which ODPi compliant distributions and versions did you test with?
+
+Hortonworks HDP 2.4.2
+
+e. Please describe your testing procedure you use to demonstrate compatibility of a Hadoop distribution, and what passing results will be.
+
+1. Full regression testing Cognos Analytics on Windows/Linux servers, querying Apache Hive using the Apache Hive JDBC driver/
+
+f. What modifications did you make to your software or underlying configurations for each distribution in order for them to pass?
+
+Cognos Analytics will detect and leverage the SQL constructs which Apache Hive 1.x is proven to support correctly per ISO-SQL standards/Cognos requirements
+
+g. Did you test with any ODPi compliant distributions that did not pass your interoperability tests?
+
+No.
+
+h. Did you notice any different behavior in your software or the underlying distributions when you ran your tests, whether or not you deemed the tests as passing?
+
+No.
+
+i. Which ODPi compliant distributions and versions do you provide support for in the deployment of your software?
+
+Cognos Analytics supports Hive 1.x which is deployed onto any ODPi platform that contains that version

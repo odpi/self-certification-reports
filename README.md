@@ -1,22 +1,16 @@
 # ODPi self-certification reports
 
-This repository consists of the ODPi compliance test run results made by ODPi Compliant Distributions. ODPi compliant distributions can issue pull requests against this repo to publicize thier self-certification to the ODPi specifications.
+This repository consists of the ODPi Compliance and ODPi Interoperable test results submitted by Plaform and Application Vendors.  Submitting a pull request to this repository is the first step
+in the process of acquiring ODPi Runtime Compliant and/or ODPi interoperable designation.
 
-## How to report self certification
+## Repo organization
 
-1. Download the latest acceptance test suite ( Current is at http://repo.odpi.org/ODPi/1.0/acceptance-tests/ ).
-2. Unzip the test package on the primary machine on your Hadoop cluster you wish to test.
-3. Install links on the primary machine on your Hadoop cluster you wish to test ( Either grab source from http://links.twibright.com/download.php or use the command below to install )
+Each vendor has it's own directory for reporting compliance with thier products. Each product and spec version combination will be a seperate compliance report in each directory.
 
-    ```
-    sudo yum install links
-    ```
+## ODPi Compliance Process
 
-4. Run the tests, optionally outputing the results to a text file
+https://github.com/odpi/self-certification-reports/blob/master/COMPLIANCE_PROCESS.md
 
-    ```
-    ./run_itest.sh > testresults.txt
-    ```
+## Trademark Guidelines for ODPi Compliance marks
 
-4. If the test pass, issue a pull request with the text output in a file using the naming convention: $HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.xml to this repository.
-5. A member of the ODPi will review and merge in.
+https://github.com/odpi/self-certification-reports/blob/master/TRADEMARK_GUIDELINES.md

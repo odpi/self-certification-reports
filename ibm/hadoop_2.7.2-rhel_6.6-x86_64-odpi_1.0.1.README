@@ -1,0 +1,43 @@
+As noted in other vendors test results, there are some failures in the bigtop
+smoke tests that are related to the tests being highly dependent upon some
+assumptions that bigtop is making.  Clearly in the future, we should either
+modify bigtop or look at decoupling the tests into a new harness for ODPi.
+
+We did manage to get MOST of the bigtop tests to execute, but had to do
+the following steps to make it happen.
+
+  1. Created symlink called /usr/bin/hadoop-fuse-dfs to point to point to
+     /usr/iop/4.2.0.0/hadoop/bin/hadoop-fuse-dfs
+
+  2. Fixed hadoop-fuse-dfs to set correct LD_LIBRARY_PATH. Specifically
+     we had to add /usr/lib:/usr/iop/4.2.0.0/usr/lib64 to it
+
+  3. Installed with the HDFS running as the 'hdfs' user (assumed by some
+     bigtop smoke tests)
+
+  4. Turn off HDFS trash (required by the HCFS tests)
+
+  5. Had to run the tests as the 'hdfs' user and Had to add hdfs to the 
+     sudoers group
+
+There are stil two remaining failures:
+
+  1. The yarn admin -refreshQueues is failing because the HDFS user doesn't
+     have permission to do that action.
+
+        refreshQueues: org.apache.hadoop.security.AccessControlException: User hdfs doesn't have permission to call 'refreshQueues'
+          ...
+        Caused by: org.apache.hadoop.security.AccessControlException: User hdfs doesn't have permission to call 'refreshQueues'
+
+  2. The testAdminPermissions is failing with:
+
+      org.apache.bigtop.itest.hadoop.hdfs.TestHDFSQuota > testAdminPermissions FAILED
+        java.lang.AssertionError: setQuota should not have worked
+
+     setQuota is working because I'm running as the hdfs user
+     
+
+
+An additional note: the results show JDK 1.7 in the "CLUSTER INFORMATION" section,
+however that section is picking up the JVM available in /usr/bin, not the version
+that is configured for hadoop (which is OpenJDK 1.8)
