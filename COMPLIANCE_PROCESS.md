@@ -106,10 +106,10 @@ Usage : ./run_itest.sh [-options]
 
 8. Run the tests, with needed arguments and optionally outputting the results to a text file.
 <pre>
-./run_itest.sh --info info > testresults.log 2>&1
+./run_itest.sh --info info > testresults.txt 2> testresults_verbose.txt
 </pre>
 
-9. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository.
+9. If the test pass, issue a pull request with the text output in a file using the naming convention: <vendor name>/$HADOOP_VERSION-$OS-$ARCH-$SPECVERSION.txt to the [https://github.com/odpi/self-certification-reports](https://github.com/odpi/self-certification-reports) repository. If the test fails you will have to inspect testresults_verbose.txt and provide explanations for each failure.
 
 10. A member of the ODPi TSC will review and merge in.
 
